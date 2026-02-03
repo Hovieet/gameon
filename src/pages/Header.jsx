@@ -2,7 +2,7 @@ import { organizers, img } from "../assets/assets";
 import TiltCard from "../components/TiltCard";
 import GameButton2 from "../components/GameButton2";
 import JoinCards from "../components/JoinCards";
-import videoBg from "../assets/video.mov";
+import videoBg from "../assets/video.mp4";
 import { useState } from "react";
 import Modal from "../components/Modal";
 import Rating from "../components/Rating";
