@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Press+Start+2P&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-oswald: "Oswald", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-press-start: "Press Start 2P", cursive;
+}
+
+body {
+  @apply font-inter bg-[radial-gradient(ellipse_at_top,_#C4A6F5,_#AA7BEF,_#6B4BBF)] text-white;
+}
+h1 {
+  @apply font-oswald;
+}
+h2 {
+  @apply font-press-start;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  position: relative;
+  transition: transform 0.25s ease;
+}
+
+.nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 3px;
+  background: #aa7bef;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.25s ease;
+}
+
+.nav:hover {
+  transform: translateY(-3px);
+}
+
+.nav:hover::after {
+  transform: scaleY(1);
+}
